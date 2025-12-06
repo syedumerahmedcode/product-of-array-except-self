@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) throws Exception {
         /**
@@ -18,5 +21,16 @@ public class App {
          * 
          */
         System.out.println("Hello, World!");
+        Solution solution = new Solution();
+        int[] input = { 1, 2, 3, 4 };
+        int[] result = solution.productExceptSelf(input);
+        System.out.println("The given input is :" + Arrays.toString(input)
+                + " and the answer after doing 'product exceptSelf' is:" + Arrays.toString(result));
+
+        int[] anotherInput = { -1, 1, 0, -3, 3 };
+        result = solution.productExceptSelf(anotherInput);
+        System.out.println("The given input is :" + Arrays.toString(
+                anotherInput)
+                + " and the answer after doing 'product exceptSelf' is:" + Arrays.toString(result));
     }
 }
